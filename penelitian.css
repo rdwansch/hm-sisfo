@@ -1,0 +1,49 @@
+h4.section {
+  overflow: hidden;
+}
+
+h4.section:after {
+  content: '';
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid #b5bdc4;
+}
+
+.penelitian__button {
+  background: #556b2f;
+  padding: 3px 40px;
+  border-radius: 2px;
+  border: 2px solid #556b2f;
+}
+
+.penelitian__button:hover {
+  background: #43581e;
+}
+
+.penelitian__button:focus {
+  background: #fff;
+  border: 2px solid #556b2f;
+  color: #43581e !important;
+}
+
+.preview__pdf {
+  cursor: pointer;
+  position: relative;
+  opacity: 0.7;
+}
+
+.preview__pdf:hover {
+  opacity: 1;
+  box-shadow: 2px 3px 10px #dadada !important;
+}
+
+.btn[data-bs-toggle='modal']:focus {
+  outline: none !important;
+  border: none !important;
+
+  background-color: transparent;
+}
