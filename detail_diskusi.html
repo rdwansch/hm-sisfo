@@ -1,214 +1,237 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-<body>
-
-</body>
-</html>
-
-<!doctype html>
-<html lang="en">
-<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
+    />
 
     <title>Diskusi Sesuatu - GerbangRiset</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="detail_diskusi.css">
 </head>
 <body>
 
-<nav class="nav d-flex flex-column align-items-center">
+<nav class="nav d-flex flex-column align-items-center py-3">
     <img class="d-block mx-auto" src="./images/Logo.svg" alt="logo">
+    <div class="search my-3">
+        <div class="search__wrapper d-flex justify-content-center">
+            <input type="text" class="search__input border-0" placeholder="Pencarian Jurnal, Diskusi, Penelitian"/>
+
+            <button class="btn btn-success rounded-0" id="mulaiPencarian">Mulai Pencarian</button>
+        </div>
+    </div>
 </nav>
+
+<div class="container">
+    <div class="row my-5 align-items-center">
+        <div class="col-8">
+            <h4 class="">Is loading cycle and bizzard is a parameter which relates the mechanical damage
+                to the crack size on my head distrub our hear?</h4>
+            <div class=" mt-3 text-muted information-discussion d-flex gap-5 align-items-center">
+                <span>
+                    Dibuat pada 24 Desember 2021
+                </span>
+                <div class="">
+                    <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
+                         class="rounded-circle"
+                         width="50px"
+                         height="50px">
+                    <span>Daniel Dubovv</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="d-flex justify-content-end pendapat-wrapper">
+                <button class="btn btn-outline-success mt-3 btn-pendapat">Berikan Pendapat</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <main>
     <div class="container">
-        <div class="w-75" style="margin-bottom: 40px;">
-            <h1 class="topic-discussion">Is loading cycle and bizzard is a parameter which relates the mechanical damage
-                to the crack size on my head distrub our hear?</h1>
-            <div class="d-flex justify-content-between">
-                <div class="text-muted information-discussion">
-                    Dibuat pada 24 Desember 2021 | <img src="images/thor.jpg" alt="Foto profil pembuat diskusi" class="profile-creator-discussion"> <span>Daniel Dubovv</span>
+        <div class="row">
+            <div class="col-8">
+                <h4 class="text-secondary section">Jawaban Anda</h4>
+
+                <div class="d-flex justify-content-evenly m-auto">
+
+                    <div class="pt-4">
+                        <div class="card p-4 border-light mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
+                                     class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
+                                <div class="badges-user-wrapper d-flex justify-content-between">
+                                    <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
+                                    <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
+                                    <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
+                                </div>
+                            </div>
+                            <p class="jawaban-user">
+                                Arun Kumar S Department of Electrical and Electronics Engineering,
+                                Sona College of Technology, SalemT. M. Amirthalakshmi Department of
+                                Electronics and Communication Engineering, SRM Institute of Science and Technology,
+                                Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
+                                college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
+                                science and Engineering, Modern Institute of Technology and research centre, Alwar,
+                                Rajasthan
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <button class="btn" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" class="text-warning" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd"
+                                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                        </svg>
+                                    </button>
+                                    <button class="btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" class="text-danger" viewBox="0 0 16 16"
+                                             onclick="confirm('Jawaban akan dihapus?')">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="answer-date">20 Des 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-3 p-4 border-light">
+                    <p class="total-jawaban-diskusi">57 Jawaban Terkait</p>
+                    <div class="">
+                        <div class="badge bg-primary">Ekonomi</div>
+                        <div class="badge bg-primary">Sains</div>
+                    </div>
+                </div>
+                <div class="card mb-3 p-4 border-light">
+                    <p class="total-jawaban-diskusi">Diskusi lain yang mungkin anda sukai: </p>
+                    <ul>
+                        <li class="mt-2">
+                            <a href="#">Ilmu antariksa yang kurang diminati masyarakat indonesia</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#">Materi deferensial yang sulit dipahami oleh sebagian orang</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <hr style="width: 80%">
-        <div class="d-flex justify-content-end pendapat-wrapper">
-            <button class="btn btn-pendapat mt-3">Berikan Pendapat</button>
-        </div>
-    </div>
 
-    <div class="wrapper-jawaban-diskusi pb-4">
-        <div class="d-flex justify-content-evenly m-auto pt-5" style="width: 85%">
-            <div class="w-75 container" >
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="header-jawaban">Jawaban Diskusi Terkait</p>
-                    <hr class="line-side-text">
-                </div>
-                <div class="pt-4 position-relative">
-                    <div class="d-flex justify-content-center">
-                        <div class="connection-lines"></div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <img src="images/thor.jpg" alt="Foto profil pembuat diskusi" class="profile-participation-discussion"> <span>Daniel Dubovv</span>
-                                <div class="badges-user-wrapper d-flex justify-content-between">
-                                    <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
-                                    <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
-                                    <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
-                                </div>
-                            </div>
-                            <article class="jawaban-user">
-                                Arun Kumar S Department of Electrical and Electronics Engineering,
-                                Sona College of Technology, SalemT. M. Amirthalakshmi Department of
-                                Electronics and Communication Engineering, SRM Institute of Science and Technology,
-                                Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
-                                college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
-                                science and Engineering, Modern Institute of Technology and research centre, Alwar, Rajasthan
-                            </article>
-                            <div class="action-button mt-3 mb-3">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <button class="btn btn-secondary btn-sunting" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sunting</button>
-                                        <button class="btn btn-secondary btn-sunting">Hapus Jawaban</button>
-                                    </div>
-                                    <p class="answer-date">20 Des 2014</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <img src="images/thor.jpg" alt="Foto profil pembuat diskusi" class="profile-participation-discussion"> <span>Daniel Dubovv</span>
-                                <div class="badges-user-wrapper d-flex justify-content-between">
-                                    <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
-                                    <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
-                                    <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
-                                </div>
-                            </div>
-                            <article class="jawaban-user">
-                                Arun Kumar S Department of Electrical and Electronics Engineering,
-                                Sona College of Technology, SalemT. M. Amirthalakshmi Department of
-                                Electronics and Communication Engineering, SRM Institute of Science and Technology,
-                                Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
-                                college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
-                                science and Engineering, Modern Institute of Technology and research centre, Alwar, Rajasthan
-                            </article>
-                            <div class="action-button mt-3 mb-3">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <button class="btn btn-secondary btn-sunting" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sunting</button>
-                                        <button class="btn btn-secondary btn-sunting">Hapus Jawaban</button>
-                                    </div>
-                                    <p class="answer-date">20 Des 2014</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <img src="images/thor.jpg" alt="Foto profil pembuat diskusi" class="profile-participation-discussion"> <span>Daniel Dubovv</span>
-                                <div class="badges-user-wrapper d-flex justify-content-between">
-                                    <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
-                                    <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
-                                    <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
-                                </div>
-                            </div>
-                            <article class="jawaban-user">
-                                Arun Kumar S Department of Electrical and Electronics Engineering,
-                                Sona College of Technology, SalemT. M. Amirthalakshmi Department of
-                                Electronics and Communication Engineering, SRM Institute of Science and Technology,
-                                Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
-                                college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
-                                science and Engineering, Modern Institute of Technology and research centre, Alwar, Rajasthan
-                            </article>
-                            <div class="action-button mt-3 mb-3">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <button class="btn btn-secondary btn-sunting" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sunting</button>
-                                        <button class="btn btn-secondary btn-sunting">Hapus Jawaban</button>
-                                    </div>
-                                    <p class="answer-date">20 Des 2014</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <img src="images/thor.jpg" alt="Foto profil pembuat diskusi" class="profile-participation-discussion"> <span>Daniel Dubovv</span>
-                                <div class="badges-user-wrapper d-flex justify-content-between">
-                                    <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
-                                    <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
-                                    <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
-                                </div>
-                            </div>
-                            <article class="jawaban-user">
-                                Arun Kumar S Department of Electrical and Electronics Engineering,
-                                Sona College of Technology, SalemT. M. Amirthalakshmi Department of
-                                Electronics and Communication Engineering, SRM Institute of Science and Technology,
-                                Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
-                                college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
-                                science and Engineering, Modern Institute of Technology and research centre, Alwar, Rajasthan
-                            </article>
-                            <div class="action-button mt-3 mb-3">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <button class="btn btn-secondary btn-sunting" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sunting</button>
-                                        <button class="btn btn-secondary btn-sunting">Hapus Jawaban</button>
-                                    </div>
-                                    <p class="answer-date">20 Des 2014</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="pt-5 pb-3 col-8">
+            <h4 class="text-secondary section">Jawaban Lainnya</h4>
 
-                </div>
-            </div>
-            <div class="jawaban-side-section" style="width: 20%">
-                <div class="card">
-                    <div class="card-body p-3">
-                        <p class="total-jawaban-diskusi">57 Jawaban Terkait</p>
-                        <div class="mt-3 ">
-                            <div class="badge bg-primary">Ekonomi</div>
-                            <div class="badge bg-primary">Sains</div>
+            <div class="position-relative">
+                <div class="connection-lines"></div>
+                <div class="card p-4 border-light mb-3 ">
+                    <div class="d-flex align-items-center">
+                        <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
+                             class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
+                        <div class="badges-user-wrapper d-flex justify-content-between">
+                            <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
+                            <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
+                            <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
                         </div>
                     </div>
+                    <p class="jawaban-user">
+                        Arun Kumar S Department of Electrical and Electronics Engineering,
+                        Sona College of Technology, SalemT. M. Amirthalakshmi Department of
+                        Electronics and Communication Engineering, SRM Institute of Science and Technology,
+                        Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
+                        college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
+                        science and Engineering, Modern Institute of Technology and research centre, Alwar,
+                        Rajasthan
+                    </p>
+                    <div class="d-flex justify-content-end align-items-center">
+
+                        <p class="answer-date">20 Des 2014</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="card-body p-3">
-                        <p class="total-jawaban-diskusi">Diskusi lain yang mungkin anda sukai: </p>
-                        <ul class="mt-3">
-                            <div class="badge bg-primary">Ekonomi</div>
-                            <li class="mt-2">
-                                <a href="#">Ilmu antariksa yang kurang diminati masyarakat indonesia</a>
-                            </li>
-                            <li class="mt-2">
-                                <a href="#">Materi deferensial yang sulit dipahami oleh sebagian orang</a>
-                            </li>
-                            <div class="badge bg-primary mt-3">Sains</div>
-                            <li class="mt-2">
-                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing...</a>
-                            </li>
-                            <li class="mt-2">
-                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing...</a>
-                            </li>
-                        </ul>
+                <div class="card p-4 border-light mb-3 ">
+                    <div class="d-flex align-items-center">
+                        <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
+                             class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
+                        <div class="badges-user-wrapper d-flex justify-content-between">
+                            <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
+                            <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
+                            <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
+                        </div>
+                    </div>
+                    <p class="jawaban-user">
+                        Arun Kumar S Department of Electrical and Electronics Engineering,
+                        Sona College of Technology, SalemT. M. Amirthalakshmi Department of
+                        Electronics and Communication Engineering, SRM Institute of Science and Technology,
+                        Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
+                        college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
+                        science and Engineering, Modern Institute of Technology and research centre, Alwar,
+                        Rajasthan
+                    </p>
+                    <div class="d-flex justify-content-end align-items-center">
+
+                        <p class="answer-date">20 Des 2014</p>
+                    </div>
+                </div>
+                <div class="card p-4 border-light mb-3 ">
+                    <div class="d-flex align-items-center">
+                        <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
+                             class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
+                        <div class="badges-user-wrapper d-flex justify-content-between">
+                            <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
+                            <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
+                            <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
+                        </div>
+                    </div>
+                    <p class="jawaban-user">
+                        Arun Kumar S Department of Electrical and Electronics Engineering,
+                        Sona College of Technology, SalemT. M. Amirthalakshmi Department of
+                        Electronics and Communication Engineering, SRM Institute of Science and Technology,
+                        Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
+                        college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
+                        science and Engineering, Modern Institute of Technology and research centre, Alwar,
+                        Rajasthan
+                    </p>
+                    <div class="d-flex justify-content-end align-items-center">
+
+                        <p class="answer-date">20 Des 2014</p>
+                    </div>
+                </div>
+                <div class="card p-4 border-light mb-3 ">
+                    <div class="d-flex align-items-center">
+                        <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
+                             class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
+                        <div class="badges-user-wrapper d-flex justify-content-between">
+                            <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
+                            <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
+                            <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
+                        </div>
+                    </div>
+                    <p class="jawaban-user">
+                        Arun Kumar S Department of Electrical and Electronics Engineering,
+                        Sona College of Technology, SalemT. M. Amirthalakshmi Department of
+                        Electronics and Communication Engineering, SRM Institute of Science and Technology,
+                        Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
+                        college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
+                        science and Engineering, Modern Institute of Technology and research centre, Alwar,
+                        Rajasthan
+                    </p>
+                    <div class="d-flex justify-content-end align-items-center">
+
+                        <p class="answer-date">20 Des 2014</p>
                     </div>
                 </div>
             </div>
@@ -217,15 +240,16 @@
 </main>
 
 
-<footer class="container w-75 text-center mt-5">
-    <div class="border-top"></div>
-    <p>&copy; 2023. All rights reserved.</p>
+<footer class="container d-flex justify-content-between text-secondary py-3">
+    <p>©2023 ResearchGate GmbH. All rights reserved.</p>
+    <p>Terms. Copyright. Privacy</p>
 </footer>
 
 
 <!-- modal section -->
 <!-- Vertically centered modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -246,7 +270,9 @@
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 <script src="javascript/general.js"></script>
 
 <!-- Option 2: Separate Popper and Bootstrap JS -->

@@ -35,17 +35,13 @@
 }
 
 .btn-pendapat {
-    background-color: #bb671e;
-    outline: none;
-    border: none;
-    color: white;
     border-radius: 2px;
 }
 
-.btn-pendapat:hover {
-    background-color: #bb671e;
+.btn-pendapat:active{
+    background-color: #fff;
     outline: none;
-    color: white;
+    color: var(--success-color);
 }
 
 .wrapper-jawaban-diskusi {
