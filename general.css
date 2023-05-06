@@ -1,11 +1,37 @@
-.navbar {
-    background-color: #00CCBB;
-    height: 65px;
-    width: 100%;
+:root {
+    ---primary-color: #556b2f;
+    --primary-light-color: #d6e7b7;
+    --secondary-color: #414141;
+    --secondary-color-light: #bbb;
 }
 
-.navbar h1 {
-    font-size: 30px;
+.nav {
+    border-bottom: 2px solid rgba(185, 180, 180, 0.3);
+}
+
+.nav-active {
+    border-bottom: 2px solid purple;
+    padding-bottom: 10px;
+}
+
+main {
+    background-color: rgba(229, 229, 229, 0.35);
+    padding-top: 40px;
+}
+
+h4.section {
+    overflow: hidden;
+}
+
+h4.section:after {
+    content: '';
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid #b5bdc4;
 }
 
 footer {
@@ -26,4 +52,78 @@ footer {
 
 .modal-content {
     border-radius: 2px;
+}
+
+.mulai-pencarian--active {
+    border-radius: 0px 2px 2px 0px !important;
+}
+
+.card {
+    z-index: 10;
+}
+
+.connection-lines {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20px;
+    height: 100%;
+    z-index: 5;
+    background-image: linear-gradient(to bottom, rgba(0, 255, 220, 0.3), rgba(4, 108, 98, 0.3));
+}
+
+.research-link,a {
+    text-decoration: none;
+}
+
+a {
+    color: #595555;
+}
+
+.research-link:hover {
+    text-decoration: underline;
+}
+
+.search__wrapper {
+    display: flex;
+
+    width: 800px;
+    max-width: 100%;
+
+    padding-right: 20px;
+    padding-left: 20px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.search .search__input {
+    width: 0;
+    outline: none;
+    transition: all 0.75s;
+}
+
+.search__input--active {
+    border: 1px solid var(--secondary-color-light);
+    padding: 10px;
+    border-right: none;
+}
+
+.search .search__button {
+    display: block;
+
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+
+    background-color: var(---primary-color);
+    color: #fff;
+
+    width: 120px;
+}
+
+.search .search__button:hover {
+    cursor: pointer;
+    background-color: #485c25;
 }

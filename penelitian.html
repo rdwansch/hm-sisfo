@@ -11,16 +11,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="penelitian.css" />
+    <link rel="stylesheet" href="general.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-      </div>
-    </nav>
-    <hr />
+  <nav class="nav d-flex flex-column align-items-center py-4">
+    <img class="d-block mx-auto" src="./images/Logo.svg" alt="logo">
+  </nav>
 
-    <div style="background-color: #fafafa">
+  <main>
+    <div>
       <div class="container">
         <div class="row">
           <div class="col-8">
@@ -36,19 +35,19 @@
               <div class="d-flex gap-5">
                 <div class="d-flex gap-2 align-items-center">
                   <img
-                    src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
-                    alt="d"
-                    class="rounded-circle"
-                    width="40px"
+                          src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
+                          alt="d"
+                          class="rounded-circle"
+                          width="40px"
                   />
                   <strong>Sir Aziz Sheikh</strong>
                 </div>
                 <div class="d-flex gap-2 align-items-center">
                   <img
-                    src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
-                    alt="dddd"
-                    class="rounded-circle"
-                    width="40px"
+                          src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
+                          alt="dddd"
+                          class="rounded-circle"
+                          width="40px"
                   />
                   <strong class="font-bold">Ashley Akbari </strong>
                 </div>
@@ -67,7 +66,7 @@
               Office.
             </div>
 
-            <div class="d-flex gap-3 mt-3">
+            <div class="d-flex gap-3 mt-3 align-items-center">
               <img src="./pdf.png" alt="Hello" class="shadow-sm preview__pdf" width="100px" />
               <img src="./pdf.png" alt="Hello" class="shadow-sm preview__pdf" width="100px" />
               <img src="./pdf.png" alt="Hello" class="shadow-sm preview__pdf" width="100px" />
@@ -84,10 +83,10 @@
               <div class="card border-light p-4">
                 <div class="d-flex gap-2 align-items-center">
                   <img
-                    src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
-                    alt="dddd"
-                    class="rounded-circle"
-                    width="40px"
+                          src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
+                          alt="dddd"
+                          class="rounded-circle"
+                          width="40px"
                   />
                   <strong class="font-bold">Ashley Akbari </strong>
                 </div>
@@ -98,10 +97,10 @@
 
                 <div class="d-flex gap-2 align-items-center">
                   <img
-                    src="https://i1.rgstatic.net/ii/profile.image/618632337948678-1524504851410_Q64/Shibabrata-Pattanayak.jpg"
-                    alt="dddd"
-                    class="rounded-circle"
-                    width="40px"
+                          src="https://i1.rgstatic.net/ii/profile.image/618632337948678-1524504851410_Q64/Shibabrata-Pattanayak.jpg"
+                          alt="dddd"
+                          class="rounded-circle"
+                          width="40px"
                   />
                   <strong class="font-bold">Shibabrata Pattanayak</strong>
                 </div>
@@ -116,35 +115,39 @@
 
             <div class="mt-5">
               <h4 class="text-secondary section">Rekomendasi</h4>
-              <div class="card p-4 border-light mb-3">
-                <h5>DeFL: Decentralized Weight Aggregation for Cross-silo Federated Learning</h5>
-                <p class="text-secondary">
-                  Federated learning (FL) is an emerging promising paradigm of privacy-preserving machine learning (ML). An
-                  important type of FL is cross-silo FL, which enables a small scale of organizations to cooperatively train
-                  a shared model by keeping confidential data locally and aggregating weights on a central parameter server.
-                </p>
+              <div class="position-relative">
+                <div class="connection-lines"></div>
+                <div class="card p-4 border-light mb-3">
+                  <h5>DeFL: Decentralized Weight Aggregation for Cross-silo Federated Learning</h5>
+                  <p class="text-secondary">
+                    Federated learning (FL) is an emerging promising paradigm of privacy-preserving machine learning (ML). An
+                    important type of FL is cross-silo FL, which enables a small scale of organizations to cooperatively train
+                    a shared model by keeping confidential data locally and aggregating weights on a central parameter server.
+                  </p>
+                </div>
+
+                <div class="card p-4 border-light mb-3">
+                  <h5>FREEDOM HOUSE civil society organizations in Myanmar 6 OCTOBER'S 2022 COLLECTIONS</h5>
+                  <p class="text-secondary">
+                    REEDOM HOUSE civil society organizations in Myanmar 6 OCTOBER'S 2022 COLLECTIONS Freedom House works to
+                    defend human rights and promote democratic change, with a focus on political rights and civil liberties. We
+                    act as a catalyst for freedom through a combination of analysis, advocacy, and action. Our analysis,
+                    focused on 13 central issues, is underpinned by our international program work.
+                  </p>
+                </div>
+
+                <div class="card p-4 border-light">
+                  <h5>Reconstructing in/with the house: A familiar conversation</h5>
+                  <p class="text-secondary">
+                    Mustarinda Association is a group of artists and researchers whose goal is to promote ecological
+                    reconstructions within society, a diversity of na­turecultures, and connections between art and science.
+                    Reaching towards a post-fossil culture, Mustarinda works in/through/with contempo-rary art,
+                    boundary-crossing research, practical ex­perimentation, communication, education, and events. Its
+                    activities are roote.
+                  </p>
+                </div>
               </div>
 
-              <div class="card p-4 border-light mb-3">
-                <h5>FREEDOM HOUSE civil society organizations in Myanmar 6 OCTOBER'S 2022 COLLECTIONS</h5>
-                <p class="text-secondary">
-                  REEDOM HOUSE civil society organizations in Myanmar 6 OCTOBER'S 2022 COLLECTIONS Freedom House works to
-                  defend human rights and promote democratic change, with a focus on political rights and civil liberties. We
-                  act as a catalyst for freedom through a combination of analysis, advocacy, and action. Our analysis,
-                  focused on 13 central issues, is underpinned by our international program work.
-                </p>
-              </div>
-
-              <div class="card p-4 border-light">
-                <h5>Reconstructing in/with the house: A familiar conversation</h5>
-                <p class="text-secondary">
-                  Mustarinda Association is a group of artists and researchers whose goal is to promote ecological
-                  reconstructions within society, a diversity of na­turecultures, and connections between art and science.
-                  Reaching towards a post-fossil culture, Mustarinda works in/through/with contempo-rary art,
-                  boundary-crossing research, practical ex­perimentation, communication, education, and events. Its
-                  activities are roote.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -153,6 +156,8 @@
       <br />
       <br />
     </div>
+  </main>
+
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -179,5 +184,7 @@
       const modal = new bootstrap.Modal('#myModal');
       document.querySelectorAll('.preview__pdf').forEach(btn => btn.addEventListener('click', () => modal.show()));
     </script>
+
+  <script src="javascript/general.js"></script>
   </body>
 </html>

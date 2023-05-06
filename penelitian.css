@@ -1,33 +1,18 @@
-h4.section {
-  overflow: hidden;
-}
-
-h4.section:after {
-  content: '';
-  display: inline-block;
-  height: 0.5em;
-  vertical-align: bottom;
-  width: 100%;
-  margin-right: -100%;
-  margin-left: 10px;
-  border-top: 1px solid #b5bdc4;
-}
-
 .penelitian__button {
-  background: #556b2f;
+  background: #759d3d;
   padding: 3px 40px;
   border-radius: 2px;
-  border: 2px solid #556b2f;
+  border: 2px solid #759d3d;
 }
 
 .penelitian__button:hover {
-  background: #43581e;
+  background: #759d3d;
 }
 
 .penelitian__button:focus {
   background: #fff;
-  border: 2px solid #556b2f;
-  color: #43581e !important;
+  border: 2px solid #759d3d;
+  color: #759d3d !important;
 }
 
 .preview__pdf {

@@ -11,16 +11,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="general.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-      </div>
-    </nav>
-    <hr />
 
-    <div class="container my-5">
+  <nav class="nav d-flex flex-column align-items-center py-3">
+    <img class="" src="./images/Logo.svg" alt="logo">
+    <ol class="breadcrumb mt-3">
+      <li class="breadcrumb-item"><a class="text-primary text-decoration-underline" href="./search.html">Pencarian</a></li>
+      <li class="breadcrumb-item"><a class="text-primary text-decoration-underline" href="./profile.html">Profile</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Publikasi</li>
+    </ol>
+  </nav>
+
+    <div class="container mt-5">
       <div class="row justify-content-between">
         <div class="col-7">
           <div class="d-flex align-items-center gap-3">
@@ -42,8 +46,20 @@
         <div class="col-4">
           <span>Bergabung pada 10 Janurari 2023</span>
         </div>
+        <div class="nav-profile d-flex gap-3 mt-4">
+          <p class="nav-active">
+            <a href="#">Publikasi</a>
+          </p>
+          <p>
+            <a href="#">Diskusi</a>
+          </p>
+          <p>
+            <a href="./profil_penelitian.html">Pengaturan Penelitian</a>
+          </p>
+        </div>
       </div>
     </div>
+
 
     <div style="background-color: #fafafa">
       <div class="container">
@@ -51,7 +67,11 @@
           <h4 class="text-secondary section">Penelitian</h4>
 
           <div class="card p-4 border-light mb-3">
-            <h5>DeFL: Decentralized Weight Aggregation for Cross-silo Federated Learning</h5>
+            <h5>
+              <a class="text-dark research-link" href="./penelitian.html">
+                DeFL: Decentralized Weight Aggregation for Cross-silo Federated Learning
+              </a>
+            </h5>
             <p class="text-secondary">
               Federated learning (FL) is an emerging promising paradigm of privacy-preserving machine learning (ML). An
               important type of FL is cross-silo FL, which enables a small scale of organizations to cooperatively train a
@@ -60,7 +80,11 @@
           </div>
 
           <div class="card p-4 border-light mb-3">
-            <h5>An Integer Programming Approach for Patrol Police Allocation in an Urban City in the Philippines</h5>
+            <h5>
+
+              <a class="text-dark research-link" href="./penelitian.html">
+                An Integer Programming Approach for Patrol Police Allocation in an Urban City in the Philippines
+              </a></h5>
             <p class="text-secondary">
               Federated learning (FL) is an emerging promising paradigm of privacy-preserving machine learning (ML). An
               important type of FL is cross-silo FL, which enables a small scale of organizations to cooperatively train a
@@ -69,7 +93,11 @@
           </div>
 
           <div class="card p-4 border-light mb-3">
-            <h5>Ernest Hemingway House-White House-William Faulkner House</h5>
+            <h5>
+              <a class="text-dark research-link" href="./penelitian.html">
+                Ernest Hemingway House-White House-William Faulkner House
+              </a>
+              </h5>
             <p class="text-secondary">
               Federated learning (FL) is an emerging promising paradigm of privacy-preserving machine learning (ML). An
               important type of FL is cross-silo FL, which enables a small scale of organizations to cooperatively train a
@@ -82,7 +110,11 @@
           <h4 class="text-secondary section">Diskusi</h4>
 
           <div class="card p-4 border-light mb-3">
-            <h5>Is there any indigenous or regional language philosophy to define a word?</h5>
+            <h5>
+              <a class="text-dark research-link" href="./detail_diskusi.html">
+                Is there any indigenous or regional language philosophy to define a word?
+              </a>
+              </h5>
             <p class="text-secondary">
               To define a “WORD” is not easy. Bloomfield defines the word as a “MINIMUM FREE FORM”. But many linguists raise
               their eyebrows at this definition.
@@ -101,7 +133,7 @@
                 <div class="d-flex gap-2 align-items-center">
                   <img
                     src="https://i1.rgstatic.net/ii/profile.image/618632337948678-1524504851410_Q64/Shibabrata-Pattanayak.jpg"
-                    alt="dddd"
+                    alt=""
                     class="rounded-circle"
                     width="40px"
                   />
@@ -141,7 +173,7 @@
                     class="rounded-circle"
                     width="40px"
                   />
-                  <strong class="font-bold">Hashem Adnan Kilani</strong>
+                  <small><strong><a href="./profile.html">Hashem Adnan Kilani</a></strong></small>
                 </div>
 
                 <div class="d-flex gap-2 align-items-center mt-3">
@@ -151,7 +183,7 @@
                     class="rounded-circle"
                     width="40px"
                   />
-                  <strong class="font-bold">Beata Borowska-Beszta</strong>
+                  <small><strong>Beata Borowska-Beszta</strong></small>
                 </div>
 
                 <span class="text-secondary mt-3">+120 orang lainnya</span>
@@ -172,5 +204,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="javascript/general.js"></script>
   </body>
 </html>
