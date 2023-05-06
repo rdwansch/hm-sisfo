@@ -1,0 +1,111 @@
+.topic-discussion {
+    color: #b95858;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.information-discussion {
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.profile-creator-discussion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    top: 20px;
+    border: 2px solid #ffcbcb;
+}
+
+.profile-participation-discussion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    border: 2px solid #ffcbcb;
+}
+
+.pendapat-wrapper {
+    width: 85%;
+}
+
+.btn-pendapat {
+    background-color: #bb671e;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+.btn-pendapat:hover {
+    background-color: #bb671e;
+    outline: none;
+    color: white;
+}
+
+.wrapper-jawaban-diskusi {
+    background-color: #F1F1F1;
+    margin-top: 75px;
+}
+
+.badge-user {
+    width: 30px;
+    height: 30px;
+}
+
+.badges-user-wrapper {
+    margin-left: 25px;
+    gap: 10px;
+}
+
+.wrapper-jawaban-diskusi .card-body {
+    padding-top: 30px;
+    padding-left: 40px;
+    width: 85%;
+}
+
+.jawaban-user {
+    margin-top: 25px;
+    color: rgba(75, 71, 71, 0.7);
+}
+
+.header-jawaban {
+    color: rgba(75, 71, 71, 0.7);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.answer-date {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(108, 101, 101, 0.7);
+    padding-right: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.connection-lines {
+    position: absolute;
+    bottom: 20px;
+    width: 20px;
+    height: 80%;
+    z-index: 5;
+    background-image: linear-gradient(to bottom, #48efda, #012320);
+}
+
+.jawaban-side-section {
+}
+
+.total-jawaban-diskusi {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(75, 71, 71, 0.7);
+}
