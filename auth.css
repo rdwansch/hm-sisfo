@@ -1,0 +1,59 @@
+.container-form {
+    margin-top: 150px;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    background-color: #D9D9D9;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.container-section-2 {
+    margin-top: 90px;
+}
+
+.google-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+.btn-outline-secondary {
+    background-color: #F5F5F5;
+    font-size: 18px;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.register-link {
+    text-decoration: underline;
+    color: #00CCBB;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.register-link:hover {
+    color: #00CCBB;
+}
+
+.register {
+    margin-top: 20px;
+}
+
+.text-peringatan {
+    margin-top: 5px;
+    font-size: 15px;
+    color: rgb(255, 30, 30);
+    opacity: 0.6;
+}

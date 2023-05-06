@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #00CCBB;
+    height: 65px;
+    width: 100%;
+}
+
+.navbar h1 {
+    font-size: 30px;
+}
+
+footer {
+    bottom: 20px;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+.border-top {
+    border-top: 5px solid black;
+    padding-top: 20px;
+}
+
+.line-side-text {
+    width: 80%;
+}
+
+.modal-content {
+    border-radius: 2px;
+}
