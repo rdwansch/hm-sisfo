@@ -1,7 +1,5 @@
 /* Content Section */
 .content {
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: #fafafa;
   width: 100%;
   min-height: 80vh;
@@ -95,14 +93,4 @@
 
 .article .article__card p {
   font-size: 15px;
-}
-
-footer {
-  margin-top: 20px;
-  padding-bottom: 20px;
-  color: #757575;
-  font-size: 15px;
-
-  display: flex;
-  justify-content: space-between;
 }
