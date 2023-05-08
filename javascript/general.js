@@ -6,8 +6,10 @@ const navMenus = document.querySelectorAll('.nav__menu');
 const starClicked = document.querySelectorAll('.star-clicked');
 const starUnclicked = document.querySelectorAll('.star-unclicked');
 
+const titleLandingPage = 'Kami percaya bahwa penelitian hebat\ndimulai dari teman kolaborasi yang tepat.'
 
-mulaiPencarian?.addEventListener('click', () => {
+
+const mulaiPencarianFunc = () => {
     searchInput.style.width = '80%';
     searchInput.classList.add('search__input--active');
     searchInput.classList.add('rounded-start-1');
@@ -17,7 +19,11 @@ mulaiPencarian?.addEventListener('click', () => {
     mulaiPencarian.classList.add('mulai-pencarian--active');
     mulaiPencarian.classList.remove('rounded-0');
     mulaiPencarian.classList.add('rounded-end-1');
-})
+}
+
+mulaiPencarian?.addEventListener('click', () =>
+    mulaiPencarianFunc()
+)
 
 navMenus?.forEach(navMenu => {
     navMenu.addEventListener('click', el => {
@@ -89,6 +95,33 @@ starClicked?.forEach(star => {
         star.parentNode.children[0].classList.remove('d-none');
     })
 })
+
+
+// create typing effect
+const typingEffect = (text, element, delay = 100) => {
+
+    if(element == undefined) {
+        return
+    }
+    let i = 0;
+    const firstWordLength = text.split(' ')[0].length;
+    const typing = () => {
+        if (i == firstWordLength) {
+            mulaiPencarianFunc()
+        }
+        if (i < text.length) {
+            element.innerText += text.charAt(i);
+            i++;
+            setTimeout(typing, delay);
+        } else {
+            element.nextElementSibling.remove()
+        }
+
+    }
+    typing();
+}
+
+typingEffect(titleLandingPage, document.querySelector('#title-landing-page'), 50);
 
 // code for initiate ckeditor
 ClassicEditor?.create(document.querySelector('#editor'))

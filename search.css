@@ -99,3 +99,7 @@
   text-decoration: underline !important;
   cursor: pointer;
 }
+
+li, li>a{
+  color:rgb(108,117,125) !important;
+}
