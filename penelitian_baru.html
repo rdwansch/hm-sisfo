@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="general.css" />
     <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
+    <link rel="shortcut icon" href="images/favico.png" type="image/x-icon"/>
   </head>
   <body style="min-height: 100vh">
     <nav class="nav d-flex flex-column align-items-center py-3">
@@ -128,6 +129,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="javascript/general.js"></script>
 
     <script>
       var daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
@@ -187,23 +189,6 @@
 
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
       const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-
-      ClassicEditor.create(document.querySelector('#editor'))
-        .then(editor => {
-          const ckToolbar = document.querySelector('.ck.ck-toolbar__items');
-
-          ckToolbar.childNodes[11].classList.add('d-none');
-          ckToolbar.childNodes[12].classList.add('d-none');
-          // console.log(ckToolbar.childNodes);
-
-          editor.editing.view.change(writer => {
-            writer.setStyle('min-height', '123px', editor.editing.view.document.getRoot());
-          });
-          window.editor = editor;
-        })
-        .catch(error => {
-          console.error(error);
-        });
 
       const cetakDOI = document.querySelector('#cetakDOI');
 

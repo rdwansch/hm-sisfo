@@ -1,116 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Pencarian | GRS</title>
-    <link rel="stylesheet" href="search.css" />
-    <link rel="stylesheet" href="general.css" />
-    <link rel="shortcut icon" href="images/favico.png" type="image/x-icon" />
+    <link rel="stylesheet" href="search.css"/>
+    <link rel="stylesheet" href="general.css"/>
+    <link rel="shortcut icon" href="images/favico.png" type="image/x-icon"/>
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
     />
-  </head>
-  <body>
-    <nav class="nav d-flex flex-column align-items-center py-3">
-      <img class="d-block mx-auto" src="./images/Logo.svg" alt="logo" />
-      <div class="d-flex justify-content-center gap-3 mt-4">
-        <p class="nav-active">Penelitian</p>
-        <p>Diskusi</p>
-        <p>Anggota</p>
-      </div>
-    </nav>
+</head>
+<body>
+<nav class="nav d-flex flex-column align-items-center py-3">
+    <img class="d-block mx-auto" src="./images/Logo.svg" alt="logo"/>
+    <div class="d-flex justify-content-center gap-3 mt-4">
+        <p class="nav__menu from-right change-active nav-active" data-bs-nav="penelitian">Penelitian</p>
+        <p class="nav__menu" data-bs-nav="diskusi">Diskusi</p>
+        <p class="nav__menu" data-bs-nav="anggota">Anggota</p>
+    </div>
+</nav>
 
-    <div class="content py-5">
-      <div class="container">
+<div class="content py-5">
+    <div class="container">
         <div class="search my-3">
-          <div class="search__wrapper d-flex justify-content-center">
-            <input type="text" class="search__input border-0" placeholder="Pencarian Jurnal, Diskusi, Penelitian" />
+            <div class="search__wrapper d-flex justify-content-center">
+                <input type="text" class="search__input border-0" placeholder="Pencarian Jurnal, Diskusi, Penelitian"/>
 
-            <button class="btn btn-success rounded-0" id="mulaiPencarian">Mulai Pencarian</button>
-          </div>
+                <button class="btn btn-success rounded-0" id="mulaiPencarian">Mulai Pencarian</button>
+            </div>
         </div>
         <div class="row">
-          <div class="col-8">
-            <div class="position-relative">
-              <div class="connection-lines"></div>
-              <article class="card p-4 border-light my-3">
-                <h5>
-                  <a class="text-dark research-link" href="./penelitian.html"
-                    >An Efficient and Intelligent Systems for Internet of Things Based Health Observance System for Covid 19
-                    Patients</a
-                  >
-                </h5>
-                <div>
-                  <span class="article__date">Jun 2021DOI: 10.17226/26061</span>
-                  <span class="article__category">Economics</span>
-                </div>
-                <p>
-                  Arun Kumar S Department of Electrical and Electronics Engineering, Sona College of Technology, SalemT. M.
-                  Amirthalakshmi Department of Electronics and Communication Engineering, SRM Institute of Science and
-                  Technology, Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM college of
-                  Engineering and Technology, Chennai J.R. Arunkumar Department of Computer science and Engineering, Modern
-                  Institute of Technology and research centre, Alwar, Rajasthan
-                </p>
-              </article>
+            <div class="col-8">
+                <div class="menu-content-wrapper">
+                    <div class="penelitian-wrapper position-relative">
+                        <div class="connection-lines"></div>
+                        <div class="card p-4 border-light my-3">
+                            <h5>
+                                <a class="text-dark research-link" href="./penelitian.html"
+                                >An Efficient and Intelligent Systems for Internet of Things Based Health Observance
+                                    System
+                                    for Covid 19
+                                    Patients</a
+                                >
+                            </h5>
+                            <div>
+                                <span class="article__date">Jun 2021DOI: 10.17226/26061</span>
+                                <span class="article__category">Economics</span>
+                            </div>
+                            <p>
+                                Arun Kumar S Department of Electrical and Electronics Engineering, Sona College of
+                                Technology, SalemT. M.
+                                Amirthalakshmi Department of Electronics and Communication Engineering, SRM Institute of
+                                Science and
+                                Technology, Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering,
+                                Loyola
+                                ICAM college of
+                                Engineering and Technology, Chennai J.R. Arunkumar Department of Computer science and
+                                Engineering, Modern
+                                Institute of Technology and research centre, Alwar, Rajasthan
+                            </p>
+                        </div>
+                        <div class="card p-4 border-light my-3">
+                            <h5>
+                                <a class="text-dark research-link" href="./penelitian.html"
+                                >Acknowledgement to Reviewers of Advances in Environmental and Engineering Research in
+                                    2022</a
+                                >
+                            </h5>
+                            <div>
+                                <span class="article__date">Jun 2023DOI: 2.3235/2</span>
+                                <span class="article__category">General</span>
+                            </div>
+                            <p>Advances in Environmental and Engineering Research Editorial Office</p>
+                        </div>
+                        <div class="card p-4 border-light my-3">
+                            <h5>
+                                <a class="text-dark research-link" href="./penelitian.html"
+                                >What Is Engineering Ethics Education? Exploring How the Education of Ethics Is Defined
+                                    by
+                                    Engineering
+                                    Instructors</a
+                                >
+                            </h5>
+                            <div>
+                                <span class="article__date"> Apr 2023DOI: 10.1007/978-3-031-25233-4_20ISBN: 978-3-031-25232-7</span>
+                                <span class="article__category">Goverment</span>
+                            </div>
+                            <p>Diana Adela MartinEddie Conlon</p>
+                        </div>
+                        <div class="card p-4 border-light my-3">
+                            <h5>
+                                <a class="text-dark research-link" href="./penelitian.html">
+                                    Whole-process Engineering Consulting Services¬ Research on Evaluation of Competence
+                                    -
+                                    Nantong Jianchen
+                                    Engineering Consulting Co., LTD
+                                </a>
+                            </h5>
+                            <div>
+                                <span class="article__date">Feb 2023DOI: 10.1007/978-3-031-25233-4_21ISBN: 978-3-031-25232-7</span>
+                                <span class="article__category">Book</span>
+                            </div>
+                            <p>Advances in Environmental and Engineering Research Editorial Office</p>
+                        </div>
+                    </div>
+                    <div class="diskusi-wrapper d-none">
+                        <h4 class="text-secondary section">Ekonomi</h4>
+                        <div class="position-relative">
+                            <div class="connection-lines"></div>
+                            <div class="card p-4 border-light my-3">
+                                <h5>
+                                    <a class="text-dark research-link" href="./detail_diskusi.html"
+                                    >Is loading cycle and bizzard is a parameter which relates the mechanical damage
+                                        to the crack size on my head distrub our hear?</a>
+                                </h5>
+                                <p class="jawaban-diskusi-user">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                    aliquam asperiores aspernatur blanditiis cum distinctio, dolor dolore dolorem eos fugiat
+                                    harum impedit modi necessitatibus odio tempora tempore veniam voluptates
+                                    voluptatum...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Diikuti oleh 23 peneliti</p>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img
+                                                src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
+                                                alt="d"
+                                                class="rounded-circle"
+                                                width="40px"
+                                        />
+                                        <strong><a href="./profile.html">Sir Aziz Sheikh</a></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card p-4 border-light my-3">
+                                <h5>
+                                    <a class="text-dark research-link" href="./detail_diskusi.html"
+                                    >Is loading cycle and bizzard is a parameter which relates the mechanical damage
+                                        to the crack size on my head distrub our hear?</a>
+                                </h5>
+                                <p class="jawaban-diskusi-user">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                    aliquam asperiores aspernatur blanditiis cum distinctio, dolor dolore dolorem eos fugiat
+                                    harum impedit modi necessitatibus odio tempora tempore veniam voluptates
+                                    voluptatum...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Diikuti oleh 23 peneliti</p>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img
+                                                src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
+                                                alt="d"
+                                                class="rounded-circle"
+                                                width="40px"
+                                        />
+                                        <strong><a href="./profile.html">Sir Aziz Sheikh</a></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-secondary section">Sosial & Politik</h4>
+                        <div class="position-relative">
+                            <div class="connection-lines"></div>
+                            <div class="card p-4 border-light my-3">
+                                <h5>
+                                    <a class="text-dark research-link" href="./detail_diskusi.html"
+                                    >Is loading cycle and bizzard is a parameter which relates the mechanical damage
+                                        to the crack size on my head distrub our hear?</a>
+                                </h5>
+                                <p class="jawaban-diskusi-user">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                    aliquam asperiores aspernatur blanditiis cum distinctio, dolor dolore dolorem eos fugiat
+                                    harum impedit modi necessitatibus odio tempora tempore veniam voluptates
+                                    voluptatum...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Diikuti oleh 23 peneliti</p>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img
+                                                src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
+                                                alt="d"
+                                                class="rounded-circle"
+                                                width="40px"
+                                        />
+                                        <strong><a href="./profile.html">Sir Aziz Sheikh</a></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card p-4 border-light my-3">
+                                <h5>
+                                    <a class="text-dark research-link" href="./detail_diskusi.html"
+                                    >Is loading cycle and bizzard is a parameter which relates the mechanical damage
+                                        to the crack size on my head distrub our hear?</a>
+                                </h5>
+                                <p class="jawaban-diskusi-user">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                    aliquam asperiores aspernatur blanditiis cum distinctio, dolor dolore dolorem eos fugiat
+                                    harum impedit modi necessitatibus odio tempora tempore veniam voluptates
+                                    voluptatum...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Diikuti oleh 23 peneliti</p>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img
+                                                src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
+                                                alt="d"
+                                                class="rounded-circle"
+                                                width="40px"
+                                        />
+                                        <strong><a href="./profile.html">Sir Aziz Sheikh</a></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card p-4 border-light my-3">
+                                <h5>
+                                    <a class="text-dark research-link" href="./detail_diskusi.html"
+                                    >Is loading cycle and bizzard is a parameter which relates the mechanical damage
+                                        to the crack size on my head distrub our hear?</a>
+                                </h5>
+                                <p class="jawaban-diskusi-user">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                    aliquam asperiores aspernatur blanditiis cum distinctio, dolor dolore dolorem eos fugiat
+                                    harum impedit modi necessitatibus odio tempora tempore veniam voluptates
+                                    voluptatum...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Diikuti oleh 23 peneliti</p>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img
+                                                src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
+                                                alt="d"
+                                                class="rounded-circle"
+                                                width="40px"
+                                        />
+                                        <strong><a href="./profile.html">Sir Aziz Sheikh</a></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anggota-wrapper d-none">
+                        <h4 class="text-secondary section">Anggota Terpopuler</h4>
+                        <div class="position-relative">
+                            <div class="connection-lines"></div>
+                            <div class="card p-4 border-light my-3">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img
+                                            src="https://i1.rgstatic.net/ii/profile.image/618632337948678-1524504851410_Q64/Shibabrata-Pattanayak.jpg"
+                                            alt=""
+                                            class="rounded-circle"
+                                            width="40px"
+                                    />
+                                    <strong class="font-bold">Shibabrata Pattanayak</strong>
+                                </div>
+                                <div class="mt-3 w-75">
+                                    <h6 class="text-secondary section">Degree</h6>
+                                    <ul>
+                                        <li>Magister of Software Engineering Harvard University</li>
+                                        <li>Bachelor of Cryptography Cambridge University</li>
+                                    </ul>
+                                    <h6>Penelitian yang dikaji</h6>
+                                    <ul>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">DeFL: Decentralized Weight Aggregation for Cross-silo Federated Learning</a>
+                                        </li>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">An Integer Programming Approach for Patrol Police Allocation in an Urban City in the Philippines</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-              <div class="card p-4 border-light my-3">
-                <h5>
-                  <a class="text-dark research-link" href="./penelitian.html"
-                    >Acknowledgement to Reviewers of Advances in Environmental and Engineering Research in 2022</a
-                  >
-                </h5>
-                <div>
-                  <span class="article__date">Jun 2023DOI: 2.3235/2</span>
-                  <span class="article__category">General</span>
-                </div>
-                <p>Advances in Environmental and Engineering Research Editorial Office</p>
-              </div>
+                            </div>
+                            <div class="card p-4 border-light my-3">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img
+                                            src="https://i1.rgstatic.net/ii/profile.image/618632337948678-1524504851410_Q64/Shibabrata-Pattanayak.jpg"
+                                            alt=""
+                                            class="rounded-circle"
+                                            width="40px"
+                                    />
+                                    <strong class="font-bold">Shibabrata Pattanayak</strong>
+                                </div>
+                                <div class="mt-3 w-75">
+                                    <h6 class="text-secondary section">Degree</h6>
+                                    <ul>
+                                        <li>Magister of Software Engineering Harvard University</li>
+                                        <li>Bachelor of Cryptography Cambridge University</li>
+                                    </ul>
+                                    <h6>Penelitian yang dikaji</h6>
+                                    <ul>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">DeFL: Decentralized Weight Aggregation for Cross-silo Federated Learning</a>
+                                        </li>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">An Integer Programming Approach for Patrol Police Allocation in an Urban City in the Philippines</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-              <div class="card p-4 border-light my-3">
-                <h5>
-                  <a class="text-dark research-link" href="./penelitian.html"
-                    >What Is Engineering Ethics Education? Exploring How the Education of Ethics Is Defined by Engineering
-                    Instructors</a
-                  >
-                </h5>
-                <div>
-                  <span class="article__date"> Apr 2023DOI: 10.1007/978-3-031-25233-4_20ISBN: 978-3-031-25232-7</span>
-                  <span class="article__category">Goverment</span>
-                </div>
-                <p>Diana Adela MartinEddie Conlon</p>
-              </div>
+                            </div>
+                            <div class="card p-4 border-light my-3">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img
+                                            src="https://i1.rgstatic.net/ii/profile.image/618632337948678-1524504851410_Q64/Shibabrata-Pattanayak.jpg"
+                                            alt=""
+                                            class="rounded-circle"
+                                            width="40px"
+                                    />
+                                    <strong class="font-bold">Shibabrata Pattanayak</strong>
+                                </div>
+                                <div class="mt-3 w-75">
+                                    <h6 class="text-secondary section">Degree</h6>
+                                    <ul>
+                                        <li>Magister of Software Engineering Harvard University</li>
+                                        <li>Bachelor of Cryptography Cambridge University</li>
+                                    </ul>
+                                    <h6>Penelitian yang dikaji</h6>
+                                    <ul>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">DeFL: Decentralized Weight Aggregation for Cross-silo Federated Learning</a>
+                                        </li>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">An Integer Programming Approach for Patrol Police Allocation in an Urban City in the Philippines</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-              <div class="card p-4 border-light my-3">
-                <h5>
-                  <a class="text-dark research-link" href="./penelitian.html">
-                    Whole-process Engineering Consulting Services¬ Research on Evaluation of Competence - Nantong Jianchen
-                    Engineering Consulting Co., LTD
-                  </a>
-                </h5>
-                <div>
-                  <span class="article__date">Feb 2023DOI: 10.1007/978-3-031-25233-4_21ISBN: 978-3-031-25232-7</span>
-                  <span class="article__category">Book</span>
+                            </div>
+                            <div class="card p-4 border-light my-3">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img
+                                            src="https://i1.rgstatic.net/ii/profile.image/618632337948678-1524504851410_Q64/Shibabrata-Pattanayak.jpg"
+                                            alt=""
+                                            class="rounded-circle"
+                                            width="40px"
+                                    />
+                                    <strong class="font-bold">Shibabrata Pattanayak</strong>
+                                </div>
+                                <div class="mt-3 w-75">
+                                    <h6 class="text-secondary section">Degree</h6>
+                                    <ul>
+                                        <li>Magister of Software Engineering Harvard University</li>
+                                        <li>Bachelor of Cryptography Cambridge University</li>
+                                    </ul>
+                                    <h6>Penelitian yang dikaji</h6>
+                                    <ul>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">DeFL: Decentralized Weight Aggregation for Cross-silo Federated Learning</a>
+                                        </li>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">An Integer Programming Approach for Patrol Police Allocation in an Urban City in the Philippines</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="card p-4 border-light my-3">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img
+                                            src="https://i1.rgstatic.net/ii/profile.image/618632337948678-1524504851410_Q64/Shibabrata-Pattanayak.jpg"
+                                            alt=""
+                                            class="rounded-circle"
+                                            width="40px"
+                                    />
+                                    <strong class="font-bold">Shibabrata Pattanayak</strong>
+                                </div>
+                                <div class="mt-3 w-75">
+                                    <h6 class="text-secondary section">Degree</h6>
+                                    <ul>
+                                        <li>Magister of Software Engineering Harvard University</li>
+                                        <li>Bachelor of Cryptography Cambridge University</li>
+                                    </ul>
+                                    <h6>Penelitian yang dikaji</h6>
+                                    <ul>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">DeFL: Decentralized Weight Aggregation for Cross-silo Federated Learning</a>
+                                        </li>
+                                        <li>
+                                            <a class="profile-link-penelitian" href="./penelitian.html">An Integer Programming Approach for Patrol Police Allocation in an Urban City in the Philippines</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>Advances in Environmental and Engineering Research Editorial Office</p>
-              </div>
             </div>
-          </div>
-          <div class="col-4">sedang hangat</div>
+            <div class="col-4">
+                <div class="card p-4 border-light my-3">
+                    <p class="total-jawaban-diskusi">Diskusi yang sedang banyak dibahas</p>
+                    <ul>
+                        <li class="mt-2">
+                            <a href="./detail_diskusi.html">Ilmu antariksa yang kurang diminati masyarakat indonesia</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="./detail_diskusi.html">Materi deferensial yang sulit dipahami oleh sebagian
+                                orang</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card p-4 border-light my-3">
+                    <p class="total-jawaban-diskusi">Penelitian terbaru dari rekan anda</p>
+                    <div class="mt-2">
+                        <img
+                                src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
+                                alt="d"
+                                class="rounded-circle"
+                                width="40px"
+                        />
+                        <strong><a href="./profile.html">Sir Aziz Sheikh</a></strong>
+                        <a class="d-block ps-3 mt-2" href="./penelitian.html">An Efficient and Intelligent Systems for
+                            Internet of Things
+                            Based Health Observance System for Covid 19 Patients</a>
+                    </div>
+                    <hr>
+                    <div class="">
+                        <img
+                                src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
+                                alt="d"
+                                class="rounded-circle"
+                                width="40px"
+                        />
+                        <strong><a href="/.profile.html">Sir Aziz Sheikh</a></strong>
+                        <a class="d-block ps-3 mt-2" href="./penelitian.html">An Efficient and Intelligent Systems for
+                            Internet of Things
+                            Based Health Observance System for Covid 19 Patients</a>
+                    </div>
+                    <hr>
+                    <div class="">
+                        <img
+                                src="https://i1.rgstatic.net/ii/profile.image/272369637916732-1441949390826_Q128/Sir-Aziz-Sheikh.jpg"
+                                alt="d"
+                                class="rounded-circle"
+                                width="40px"
+                        />
+                        <strong><a href="./profile.html">Sir Aziz Sheikh</a></strong>
+                        <a class="d-block ps-3 mt-2" href="./penelitian.html">An Efficient and Intelligent Systems for
+                            Internet of Things
+                            Based Health Observance System for Covid 19 Patients</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <footer class="container d-flex justify-content-between text-secondary py-3">
-      <p>©2023 Penelitian Bersama.</p>
-      <p>Hak cipta dilindungi undang-undang.</p>
+        <p>©2023 Penelitian Bersama.</p>
+        <p>Hak cipta dilindungi undang-undang.</p>
     </footer>
 
     <script src="javascript/general.js"></script>
-  </body>
+</body>
 </html>
