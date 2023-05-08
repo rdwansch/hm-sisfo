@@ -12,11 +12,13 @@
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
             crossorigin="anonymous"
     />
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
 
     <title>Diskusi Sesuatu - GerbangRiset</title>
 
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="detail_diskusi.css">
+    <link rel="shortcut icon" href="images/favico.png" type="image/x-icon"/>
 </head>
 <body>
 
@@ -40,18 +42,21 @@
                 <span>
                     Dibuat pada 24 Desember 2021
                 </span>
-                <div class="">
-                    <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
-                         class="rounded-circle"
-                         width="50px"
-                         height="50px">
-                    <span>Daniel Dubovv</span>
+                <div class="d-flex align-items-center gap-2">
+                    <img
+                            src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
+                            alt="Foto profile pembuat diskusi"
+                            class="rounded-circle"
+                            width="50px"
+                    /> <h6>Daniel Dubovv</h6>
                 </div>
             </div>
         </div>
         <div class="col-4">
             <div class="d-flex justify-content-end pendapat-wrapper">
-                <button class="btn btn-outline-success mt-3 btn-pendapat">Berikan Pendapat</button>
+                <button class="btn btn-outline-success mt-3 btn-pendapat" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Berikan Pendapat
+                </button>
             </div>
         </div>
     </div>
@@ -67,16 +72,22 @@
 
                     <div class="pt-4">
                         <div class="card p-4 border-light mb-3">
-                            <div class="d-flex align-items-center">
-                                <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
-                                     class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
-                                <div class="badges-user-wrapper d-flex justify-content-between">
-                                    <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
-                                    <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
-                                    <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img
+                                            src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
+                                            alt="Foto profile pembuat diskusi"
+                                            class="rounded-circle"
+                                            width="50px"
+                                    /> <h6>Daniel Dubovv</h6>
                                 </div>
+                                <!--                                <div class="badges-user-wrapper d-flex justify-content-between">-->
+                                <!--                                    <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">-->
+                                <!--                                    <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">-->
+                                <!--                                    <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">-->
+                                <!--                                </div>-->
                             </div>
-                            <p class="jawaban-user">
+                            <p class="jawaban-diskusi-user">
                                 Arun Kumar S Department of Electrical and Electronics Engineering,
                                 Sona College of Technology, SalemT. M. Amirthalakshmi Department of
                                 Electronics and Communication Engineering, SRM Institute of Science and Technology,
@@ -139,16 +150,89 @@
             <div class="position-relative">
                 <div class="connection-lines"></div>
                 <div class="card p-4 border-light mb-3 ">
-                    <div class="d-flex align-items-center">
-                        <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
-                             class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
-                        <div class="badges-user-wrapper d-flex justify-content-between">
-                            <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
-                            <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
-                            <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center gap-2">
+                                <img
+                                        src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
+                                        alt="Foto profile pembuat diskusi"
+                                        class="rounded-circle"
+                                        width="50px"
+                                /> <h6><a href="./profile.html" class="text-underline-hover">Daniel Dubovv</a></h6>
+                            </div>
+                            <!--                            <div class="badges-user-wrapper d-flex justify-content-between">-->
+                            <!--                                <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">-->
+                            <!--                                <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">-->
+                            <!--                                <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">-->
+                            <!--                            </div>-->
                         </div>
                     </div>
-                    <p class="jawaban-user">
+                    <p class="jawaban-diskusi-user">
+                        Arun Kumar S Department of Electrical and Electronics Engineering,
+                        Sona College of Technology, SalemT. M. Amirthalakshmi Department of
+                        Electronics and Communication Engineering, SRM Institute of Science and Technology,
+                        Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
+                        college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
+                        science and Engineering, Modern Institute of Technology and research centre, Alwar,
+                        Rajasthan
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="d-flex align-items-center">
+                            <span>Puas dengan jawaban ini? Beri</span>
+                            <span class="px-2">
+                                        <span class="star-unclicked">
+                                            <svg style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                 height="16" fill="rgb(200,200,200)" class="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                        </svg>
+                                        </span>
+                                        <span class="star-clicked d-none">
+                                            <svg style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="rgb(200,200,200)" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                        </p>
+                        <p class="answer-date">20 Des 2014</p>
+                    </div>
+                </div>
+                <div class="card p-4 border-light mb-3 ">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center gap-2">
+                                <img
+                                        src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
+                                        alt="Foto profile pembuat diskusi"
+                                        class="rounded-circle"
+                                        width="50px"
+                                /> <h6><a href="./profile.html" class="text-underline-hover">Daniel Dubovv</a></h6>
+                            </div>
+                            <!--                            <div class="badges-user-wrapper d-flex justify-content-between">-->
+                            <!--                                <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">-->
+                            <!--                                <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">-->
+                            <!--                                <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">-->
+                            <!--                            </div>-->
+                        </div>
+                        <p class="d-flex align-items-center">
+                            <span>Puas dengan jawaban ini? Beri</span>
+                            <span class="px-2">
+                                        <span class="star-unclicked">
+                                            <svg style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                 height="16" fill="rgb(200,200,200)" class="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                        </svg>
+                                        </span>
+                                        <span class="star-clicked d-none">
+                                            <svg style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="rgb(200,200,200)" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                        </p>
+                    </div>
+                    <p class="jawaban-diskusi-user">
                         Arun Kumar S Department of Electrical and Electronics Engineering,
                         Sona College of Technology, SalemT. M. Amirthalakshmi Department of
                         Electronics and Communication Engineering, SRM Institute of Science and Technology,
@@ -163,16 +247,41 @@
                     </div>
                 </div>
                 <div class="card p-4 border-light mb-3 ">
-                    <div class="d-flex align-items-center">
-                        <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
-                             class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
-                        <div class="badges-user-wrapper d-flex justify-content-between">
-                            <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
-                            <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
-                            <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center gap-2">
+                                <img
+                                        src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
+                                        alt="Foto profile pembuat diskusi"
+                                        class="rounded-circle"
+                                        width="50px"
+                                /> <h6><a href="./profile.html" class="text-underline-hover">Daniel Dubovv</a></h6>
+                            </div>
+                            <!--                            <div class="badges-user-wrapper d-flex justify-content-between">-->
+                            <!--                                <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">-->
+                            <!--                                <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">-->
+                            <!--                                <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">-->
+                            <!--                            </div>-->
                         </div>
+                        <p class="d-flex align-items-center">
+                            <span>Puas dengan jawaban ini? Beri</span>
+                            <span class="px-2">
+                                        <span class="star-unclicked">
+                                            <svg style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                 height="16" fill="rgb(200,200,200)" class="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                        </svg>
+                                        </span>
+                                        <span class="star-clicked d-none">
+                                            <svg style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="rgb(200,200,200)" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                        </p>
                     </div>
-                    <p class="jawaban-user">
+                    <p class="jawaban-diskusi-user">
                         Arun Kumar S Department of Electrical and Electronics Engineering,
                         Sona College of Technology, SalemT. M. Amirthalakshmi Department of
                         Electronics and Communication Engineering, SRM Institute of Science and Technology,
@@ -187,40 +296,41 @@
                     </div>
                 </div>
                 <div class="card p-4 border-light mb-3 ">
-                    <div class="d-flex align-items-center">
-                        <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
-                             class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
-                        <div class="badges-user-wrapper d-flex justify-content-between">
-                            <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
-                            <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
-                            <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center gap-2">
+                                <img
+                                        src="https://i1.rgstatic.net/ii/profile.image/498207233118208-1495793268471_Q128/Ashley-Akbari.jpg"
+                                        alt="Foto profile pembuat diskusi"
+                                        class="rounded-circle"
+                                        width="50px"
+                                /> <h6><a href="./profile.html" class="text-underline-hover">Daniel Dubovv</a></h6>
+                            </div>
+                            <!--                            <div class="badges-user-wrapper d-flex justify-content-between">-->
+                            <!--                                <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">-->
+                            <!--                                <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">-->
+                            <!--                                <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">-->
+                            <!--                            </div>-->
                         </div>
+                        <p class="d-flex align-items-center">
+                            <span>Puas dengan jawaban ini? Beri</span>
+                            <span class="px-2">
+                                        <span class="star-unclicked">
+                                            <svg style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                 height="16" fill="rgb(200,200,200)" class="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                        </svg>
+                                        </span>
+                                        <span class="star-clicked d-none">
+                                            <svg style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="rgb(200,200,200)" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                        </p>
                     </div>
-                    <p class="jawaban-user">
-                        Arun Kumar S Department of Electrical and Electronics Engineering,
-                        Sona College of Technology, SalemT. M. Amirthalakshmi Department of
-                        Electronics and Communication Engineering, SRM Institute of Science and Technology,
-                        Ramapuram, ChennaiP. Delphy Department of Computer Science Engineering, Loyola ICAM
-                        college of Engineering and Technology, Chennai J.R. Arunkumar Department of Computer
-                        science and Engineering, Modern Institute of Technology and research centre, Alwar,
-                        Rajasthan
-                    </p>
-                    <div class="d-flex justify-content-end align-items-center">
-
-                        <p class="answer-date">20 Des 2014</p>
-                    </div>
-                </div>
-                <div class="card p-4 border-light mb-3 ">
-                    <div class="d-flex align-items-center">
-                        <img src="images/thor.jpg" alt="Foto profil pembuat diskusi"
-                             class="profile-participation-discussion"> <h6>Daniel Dubovv</h6>
-                        <div class="badges-user-wrapper d-flex justify-content-between">
-                            <img src="images/gold%20medal.png" alt="Gold Medal" class="badge-user">
-                            <img src="images/silver-medal.png" alt="Silver Medal" class="badge-user">
-                            <img src="images/gold-medal-2.jpg" alt="Gold Medal" class="badge-user">
-                        </div>
-                    </div>
-                    <p class="jawaban-user">
+                    <p class="jawaban-diskusi-user">
                         Arun Kumar S Department of Electrical and Electronics Engineering,
                         Sona College of Technology, SalemT. M. Amirthalakshmi Department of
                         Electronics and Communication Engineering, SRM Institute of Science and Technology,
@@ -247,21 +357,23 @@
 
 
 <!-- modal section -->
-<!-- Vertically centered modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
      aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Berikan Jawaban terkait diskusi dibawah</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ...
+                <h6 class="">Is loading cycle and bizzard is a parameter which relates the mechanical damage...</h6>
+                <div class="py-3">
+                    <div id="editor" class="card bg-secondary"></div>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary">Submit Jawaban</button>
             </div>
         </div>
     </div>
@@ -270,9 +382,11 @@
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+></script>
 <script src="javascript/general.js"></script>
 
 <!-- Option 2: Separate Popper and Bootstrap JS -->

@@ -5,25 +5,49 @@
   --secondary-color-light: #bbb;
 }
 
+.research-link,
+a {
+  text-decoration: none !important;
+}
+
+a {
+  color: #595555 !important;
+}
+
+.research-link:hover, .text-underline-hover:hover {
+  text-decoration: underline !important;
+}
+
 .nav {
   border-bottom: 2px solid rgba(185, 180, 180, 0.3);
 }
 
-.nav-active {
-  border-bottom: 2px solid purple;
-  padding-bottom: 10px;
+.nav__menu:hover {
+  cursor: pointer;
 }
+
+.nav__menu:after {
+  display:block;
+  content: '';
+  padding-bottom: 10px;
+  border-bottom: 2px solid purple;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.nav__menu.change-active:after { transform: scaleX(1); }
+.nav__menu.from-right:after{ transform-origin:100% 50%; }
+.nav__menu.from-left:after{  transform-origin:  0% 50%; }
 
 main {
   background-color: rgba(229, 229, 229, 0.35);
   padding-top: 40px;
 }
 
-h4.section {
+h4.section, h6.section {
   overflow: hidden;
 }
 
-h4.section:after {
+h4.section:after, h6.section:after {
   content: '';
   display: inline-block;
   height: 0.5em;
@@ -44,7 +68,7 @@ h4.section:after {
 }
 
 .modal-content {
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .mulai-pencarian--active {
@@ -63,20 +87,7 @@ h4.section:after {
   width: 20px;
   height: 100%;
   z-index: 5;
-  background-image: linear-gradient(to bottom, rgba(0, 255, 220, 0.3), rgba(4, 108, 98, 0.3));
-}
-
-.research-link,
-a {
-  text-decoration: none;
-}
-
-a {
-  color: #595555;
-}
-
-.research-link:hover {
-  text-decoration: underline;
+  background-image: linear-gradient(to bottom, #f4cc70, #6ab187);
 }
 
 .search__wrapper {
@@ -124,4 +135,19 @@ a {
 
 .btn__create {
   background-color: #759d3d;
+}
+
+.total-jawaban-diskusi {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(75, 71, 71, 0.7);
+}
+
+.list-group-none {
+  list-style: none;
+}
+
+.jawaban-diskusi-user {
+  margin-top: 25px;
+  color: rgba(75, 71, 71, 0.7);
 }

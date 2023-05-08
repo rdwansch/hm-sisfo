@@ -34,7 +34,7 @@
     width: 85%;
 }
 
-.btn-pendapat {
+.btn {
     border-radius: 2px;
 }
 
@@ -65,11 +65,6 @@
     width: 85%;
 }
 
-.jawaban-user {
-    margin-top: 25px;
-    color: rgba(75, 71, 71, 0.7);
-}
-
 .header-jawaban {
     color: rgba(75, 71, 71, 0.7);
     font-size: 20px;
@@ -81,10 +76,4 @@
     font-size: 16px;
     color: rgba(108, 101, 101, 0.7);
     padding-right: 20px;
-}
-
-.total-jawaban-diskusi {
-    font-size: 16px;
-    font-weight: bold;
-    color: rgba(75, 71, 71, 0.7);
 }

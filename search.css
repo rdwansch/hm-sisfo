@@ -94,3 +94,8 @@
 .article .article__card p {
   font-size: 15px;
 }
+
+.profile-link-penelitian:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
